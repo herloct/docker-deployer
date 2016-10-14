@@ -8,7 +8,7 @@
 
 Deployer is a deployment tool written in PHP.
 
-> (http://deployer.org/)
+> http://deployer.org/
 
 ## How to use this image
 
