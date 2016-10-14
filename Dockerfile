@@ -2,8 +2,8 @@ FROM php:7.0.11-alpine
 
 MAINTAINER herloct <herloct@gmail.com>
 
-RUN curl -L http://deployer.org/deployer.phar > /usr/local/bin/deployer && \
-    chmod +x /usr/local/bin/deployer
+RUN curl -L http://deployer.org/deployer.phar > /usr/local/bin/deployer \
+    && chmod +x /usr/local/bin/deployer
 
 RUN mkdir -p /project $HOME/.ssh
 VOLUME ["/project", "$HOME/.ssh"]
