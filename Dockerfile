@@ -1,11 +1,16 @@
-FROM php:7.0.12-alpine
+FROM php:7.1.2-alpine
 
 MAINTAINER herloct <herloct@gmail.com>
 
-RUN curl -L http://deployer.org/deployer.phar > /usr/local/bin/deployer \
+ENV DEPLOYER_VERSION=4.2.1
+
+RUN apk update --no-cache \
+    && apk add --no-cache \
+        openssh-client
+
+RUN curl -L https://deployer.org/releases/v$DEPLOYER_VERSION/deployer.phar > /usr/local/bin/deployer \
     && chmod +x /usr/local/bin/deployer
 
-RUN mkdir -p /project $HOME/.ssh
 VOLUME ["/project", "$HOME/.ssh"]
 WORKDIR /project
 
