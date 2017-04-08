@@ -12,7 +12,7 @@ matrix:
       - IS_LATEST=1
 
 before_script:
-  - docker build --rm --tag herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH
+  - docker build --rm --tag herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH .
   - docker run --rm herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH
   - rm -rf tests
 
