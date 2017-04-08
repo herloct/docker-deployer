@@ -1,0 +1,35 @@
+sudo: required
+dist: trusty
+
+services:
+  - docker
+
+env:
+  - DEPLOYER_VERSION=4.3.0
+  - IS_LATEST=1
+
+before_script:
+  - docker build --rm --tag herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH
+  - docker run --rm herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH
+  - rm -rf tests
+
+script:
+  - mkdir tests
+  - cd tests
+  - docker run --rm 
+    --volume $(pwd):/project
+    herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH init
+  - ls -la .
+  - if [[ ! -f "deploy.php" ]]; then exit 1; fi
+
+after_success:
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+  - docker push herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH;
+  - if [[ $TRAVIS_TAG ]]; then
+    docker tag herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH herloct/deployer:$DEPLOYER_VERSION;
+    docker push herloct/deployer:$DEPLOYER_VERSION;
+    fi
+  - if [[ $IS_LATEST == 1 ]]; then
+    docker tag herloct/deployer:$DEPLOYER_VERSION herloct/deployer:latest;
+    docker push herloct/deployer:latest;
+    fi
