@@ -1,5 +1,3 @@
-[![](https://images.microbadger.com/badges/image/herloct/deployer.svg)](http://microbadger.com/images/herloct/deployer "Get your own image badge on microbadger.com")
-
 ## Supported tags and respective `Dockerfile` links
 
 * [`4.3.0`, `latest`](https://github.com/herloct/docker-deployer/blob/4.3.0/Dockerfile)
@@ -18,7 +16,7 @@ Basic usage.
 ```sh
 docker run --rm \
     -v /local/path:/project \
-    herloct/deployer [<options>]
+    herloct/deployer[:tag] [<options>]
 ```
 
 For example, to deploy to default server.
