@@ -1,3 +1,6 @@
+[![license](https://img.shields.io/github/license/herloct/docker-deployer.svg)]() 
+[![Build Status](https://travis-ci.org/herloct/docker-deployer.svg?branch=master)](https://travis-ci.org/herloct/docker-deployer)
+
 ## Supported tags and respective `Dockerfile` links
 
 * [`4.3.0`, `latest`](https://github.com/herloct/docker-deployer/blob/4.3.0/Dockerfile)
