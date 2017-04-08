@@ -21,7 +21,7 @@ script:
   - cd tests
   - docker run --rm 
     --volume $(pwd):/project
-    herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH init
+    herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH init -t Common
   - ls -la .
   - if [[ ! -f "deploy.php" ]]; then exit 1; fi
 
