@@ -2,7 +2,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`4.2.1`, `latest`](https://github.com/herloct/docker-deployer/blob/4.2.1/Dockerfile)
+* [`4.3.0`, `latest`](https://github.com/herloct/docker-deployer/blob/4.3.0/Dockerfile)
+* [`4.2.1`](https://github.com/herloct/docker-deployer/blob/4.2.1/Dockerfile)
 
 ## What is Deployer?
 
