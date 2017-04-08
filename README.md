@@ -1,8 +1,10 @@
-[![](https://images.microbadger.com/badges/image/herloct/deployer.svg)](http://microbadger.com/images/herloct/deployer "Get your own image badge on microbadger.com")
+[![license](https://img.shields.io/github/license/herloct/docker-deployer.svg)]() 
+[![Build Status](https://travis-ci.org/herloct/docker-deployer.svg?branch=master)](https://travis-ci.org/herloct/docker-deployer)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`4.2.1`, `latest`](https://github.com/herloct/docker-deployer/blob/4.2.1/Dockerfile)
+* [`4.3.0`, `latest`](https://github.com/herloct/docker-deployer/blob/4.3.0/Dockerfile)
+* [`4.2.1`](https://github.com/herloct/docker-deployer/blob/4.2.1/Dockerfile)
 
 ## What is Deployer?
 
@@ -17,7 +19,7 @@ Basic usage.
 ```sh
 docker run --rm \
     -v /local/path:/project \
-    herloct/deployer [<options>]
+    herloct/deployer[:tag] [<options>]
 ```
 
 For example, to deploy to default server.
