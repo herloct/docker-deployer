@@ -4,9 +4,12 @@ dist: trusty
 services:
   - docker
 
-env:
-  - DEPLOYER_VERSION=4.3.0
-  - IS_LATEST=1
+matrix:
+  fast_finish: true
+  include:
+    - env:
+      - DEPLOYER_VERSION=4.3.0
+      - IS_LATEST=1
 
 before_script:
   - docker build --rm --tag herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH
