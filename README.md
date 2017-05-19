@@ -1,9 +1,10 @@
-[![license](https://img.shields.io/github/license/herloct/docker-deployer.svg)]() 
+[![license](https://img.shields.io/github/license/herloct/docker-deployer.svg)]()
 [![Build Status](https://travis-ci.org/herloct/docker-deployer.svg?branch=master)](https://travis-ci.org/herloct/docker-deployer)
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`4.3.0`, `latest`](https://github.com/herloct/docker-deployer/blob/4.3.0/Dockerfile)
+* [`5.0.0`, `latest`](https://github.com/herloct/docker-deployer/blob/5.0.0/Dockerfile)
+* [`4.3.0`](https://github.com/herloct/docker-deployer/blob/4.3.0/Dockerfile)
 * [`4.2.1`](https://github.com/herloct/docker-deployer/blob/4.2.1/Dockerfile)
 
 ## What is Deployer?
