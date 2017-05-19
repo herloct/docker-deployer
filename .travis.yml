@@ -8,7 +8,7 @@ matrix:
   fast_finish: true
   include:
     - env:
-      - DEPLOYER_VERSION=4.3.0
+      - DEPLOYER_VERSION=5.0.0
       - IS_LATEST=1
 
 before_script:
@@ -19,7 +19,7 @@ before_script:
 script:
   - mkdir tests
   - cd tests
-  - docker run --rm 
+  - docker run --rm
     --volume $(pwd):/project
     herloct/deployer:$DEPLOYER_VERSION-$TRAVIS_BRANCH init -t Common
   - ls -la .

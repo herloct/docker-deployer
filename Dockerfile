@@ -1,8 +1,8 @@
-FROM php:7.1.3-alpine
+FROM php:7.1.5-alpine
 
 MAINTAINER herloct <herloct@gmail.com>
 
-ENV DEPLOYER_VERSION=4.3.0
+ENV DEPLOYER_VERSION=5.0.0
 
 RUN apk update --no-cache \
     && apk add --no-cache \
