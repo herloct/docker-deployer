@@ -2,7 +2,7 @@ FROM php:7.1.5-alpine
 
 MAINTAINER herloct <herloct@gmail.com>
 
-ENV DEPLOYER_VERSION=5.0.2
+ENV DEPLOYER_VERSION=5.0.3
 
 RUN apk update --no-cache \
     && apk add --no-cache \

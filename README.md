@@ -3,7 +3,8 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-* [`5.0.2`, `latest`](https://github.com/herloct/docker-deployer/blob/5.0.2/Dockerfile)
+* [`5.0.3`, `latest`](https://github.com/herloct/docker-deployer/blob/5.0.3/Dockerfile)
+* [`5.0.2`](https://github.com/herloct/docker-deployer/blob/5.0.2/Dockerfile)
 * [`5.0.1`](https://github.com/herloct/docker-deployer/blob/5.0.1/Dockerfile)
 * [`5.0.0`](https://github.com/herloct/docker-deployer/blob/5.0.0/Dockerfile)
 * [`4.3.0`](https://github.com/herloct/docker-deployer/blob/4.3.0/Dockerfile)
