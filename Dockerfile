@@ -1,6 +1,6 @@
 FROM php:7.2-alpine
 
-MAINTAINER herloct <herloct@gmail.com>
+LABEL maintainer="herloct <herloct@gmail.com>"
 
 ENV DEPLOYER_VERSION=6.3.0
 
