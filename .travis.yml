@@ -8,7 +8,7 @@ matrix:
   fast_finish: true
   include:
     - env:
-      - DEPLOYER_VERSION=5.0.3
+      - DEPLOYER_VERSION=6.3.0
       - IS_LATEST=1
 
 before_script:
