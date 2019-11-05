@@ -14,5 +14,7 @@ RUN curl -L https://deployer.org/releases/v$DEPLOYER_VERSION/deployer.phar > /us
 VOLUME ["/project", "$HOME/.ssh"]
 WORKDIR /project
 
-ENTRYPOINT ["deployer"]
+COPY docker-entrypoint.sh /bin/docker-entrypoint.sh
+RUN chmod +x /bin/docker-entrypoint.sh
+ENTRYPOINT ["/bin/docker-entrypoint.sh"]
 CMD ["--version"]
