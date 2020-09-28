@@ -2,7 +2,7 @@ FROM php:7.2-alpine
 
 LABEL maintainer="herloct <herloct@gmail.com>"
 
-ENV DEPLOYER_VERSION=6.3.0
+ENV DEPLOYER_VERSION=6.8.0
 
 RUN apk update --no-cache \
     && apk add --no-cache \
